@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Playground - JavaScript 101</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <hr>
+    <p style="font: normal 20px monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;">
+      1. Capitalize : Open the console 🤓<br>
+      2. Toggle image : click on pictures <br>
+      3. Wagon race : press 'w' and 'd' <br>
+      4. Algolia Search : write in search bar <br>
+      5. Geocoder : write an adress in search bar <br>
+      <hr>
+    </p>
+
+    <!-- Add some HTML in here -->
+    <h1 class="text-center">2. Toggle images</h1>
+    <br><br>
+    <div class="text-center">
+      <img src="https://kitt.lewagon.com/placeholder/users/floustao" alt="" class="clickable togglable" id="floustao" height="200">
+      <img src="https://kitt.lewagon.com/placeholder/users/grmnlrt" alt="" class="clickable togglable" id="germain" height="200">
+      <img src="https://kitt.lewagon.com/placeholder/users/random" alt="" class="clickable togglable" id="random" height="200">
+    </div>
+    <hr>
+
+    <!-- 03_wagon_race -->
+    <h1 class="text-center">3. Wagon Race</h1>
+    <table class="racer_table">
+      <tr id="player1_race">
+        <td></td>
+        <td class="active"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="finish"></td>
+        <td></td>
+
+      </tr>
+      <tr id="player2_race">
+        <td></td>
+        <td class="active"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="finish"></td>
+        <td></td>
+      </tr>
+    </table>
+    <hr>
+
+    <div class="banner text-center"></div>
+    <div class="replay-btn text-center">
+    </div>
+
+    <!-- 04_Algolia_autocomplete_search -->
+    <h1 class="text-center">4. Algolia search</h1>
+    <br><br>
+    <div id="container" class="text-center">
+      <form action="#" class="form-inline">
+        <input type="text" id="search" placeholder=" write a word" class="form-control">
+      </form>
+    </div>
+    <ul id="results"></ul>
+    <hr>
+
+    <!-- 05_geocoder -->
+    <h1 class="text-center">5. Geocoder</h1>
+    <div class="col-xs-12 text-center">
+        <div id="searchbar">
+          <form action="#" class="form-inline">
+            <input class="form-control" type="text" id="address" placeholder="16 villa gaudelet">
+            <input type="submit" value="Search" class="btn btn-success" id="button">
+          </form>
+        </div>
+      </div>
+      <div class="col-xs-12 text-center">
+        <div id="coordinates"> / </div><hr>
+      </div>
+    </div>
+    <hr>
+    <script src="build/application.js"></script>
+  </body>
+</html>
